@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Canvas-Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This project is a React-based app with customizable text placement and styles. It allows users to create and move text elements around a canvas, customize font size, color, and style, and undo/redo actions.
 
-## Available Scripts
+## Prerequisites
+Before running this project, make sure you have the following installed on your system:
 
-In the project directory, you can run:
+- [Node.js](https://nodejs.org/) (Recommended version: `16.x` or above)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Clone the repository
+Start by cloning the project repository:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+git clone https://github.com/yourusername/yourprojectname.git
+```
 
-### `npm test`
+### 2. Navigate to the project directory
+```bash
+cd yourprojectname
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. Install dependencies
+To install the project dependencies, run:
 
-### `npm run build`
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+or, if you are using Yarn:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 4. Start the development server
+Launch the app in development mode using:
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+or:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This command will run the app on `http://localhost:3000` by default.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 5. Build for production (optional)
+To create a production build of your project, use:
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+or:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn build
+```
 
-### Code Splitting
+The production build will be generated in the `build/` directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
+Once the app is running, you can interact with it as follows:
 
-### Analyzing the Bundle Size
+- **Mouse Dragging**: Click and hold to drag the text around the canvas.
+- **Font Style Controls**: Use the buttons to change the font style (bold, italic, etc.).
+- **Undo/Redo**: Use the corresponding buttons to undo or redo your last action.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Structure
+Here's a brief overview of the folder structure:
 
-### Making a Progressive Web App
+- `src/`: Contains the main code of the application.
+  - `components/`: React components used in the app (e.g., `Canvas`, `Navbar`).
+  - `Context/`: Context provider and custom hooks for state management.
+  - `App.js`: Main application entry point.
+  - `index.js`: Entry point for React rendering.
+- `public/`: Static assets and `index.html`.
+- `node_modules/`: (Recreated by `npm install`) Contains project dependencies.
+- `package.json`: Lists project dependencies and scripts.
+- `.gitignore`: Specifies files and directories to be ignored by Git.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Key Features
+- **Customizable Text**: Adjust font size, color, and style.
+- **Undo/Redo Functionality**: Navigate through changes made on the canvas.
+- **Interactive Canvas**: Drag and drop the text elements across the canvas.
 
-### Advanced Configuration
+## Acknowledgements
+This project makes use of:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [React](https://reactjs.org/) for building the UI.
+- [Tailwind CSS](https://tailwindcss.com/) for styling.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+For any questions or suggestions, feel free to contact at pooja13gupta09@gmail.com.
